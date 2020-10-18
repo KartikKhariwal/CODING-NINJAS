@@ -1,0 +1,13 @@
+hey it wont run for n<=0 and n>m and since we are running till n>m is false so max itterations will be when n starts from least 
+
+
+i.e n=1
+
+
+so in each recursion call we are doubling n  until n>m becomes true 
+
+
+so if u think of it as for loop its for(int n=1;n<=m;n*=2)
+
+
+and u know complexity of such loop is o(log m)

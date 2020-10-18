@@ -1,0 +1,11 @@
+make matrix of n*n
+take two variables to simulate between rows : a=0,b=n-1
+take one variable to fill matrix k=1;
+while(k<=n*n)
+    for i =0 to n 
+    	fill matrix[a][i]=k++
+    a++
+    if(k>n*n)break
+    for i =0 to n 
+    	fill matrix[b][i]=k++
+    b--

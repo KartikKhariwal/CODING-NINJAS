@@ -1,0 +1,29 @@
+Let N be the length of the string. The middle of the palindrome could be in one of 2N - 1 positions: either at letter or between two letters.
+
+For each center, let’s count all the palindromes that have this center. Notice that if [a, b] is a palindromic interval (meaning S[a], S[a+1], …, S[b] is a palindrome), then [a+1, b-1] is one too.
+
+For each possible palindrome center, let’s expand our candidate palindrome on the interval [left, right] as long as we can. The condition for expanding is left >= 0 and right < N and S[left] == S[right]. That means we want to count a new palindrome S[left], S[left+1], …, S[right].
+
+
+assume string thi "wrsr"
+
+
+toh here we take 2n-1 centres to start with 
+
+
+which arr w r s r wr rs sr 
+
+
+yh toh thik h na centres tk
+ab w is palin we add 1 
+
+
+we cant go left so we stop 
+
+
+for r its palin we add 1 now we extend one to both left and right wrs its not palin we stop 
+
+for w we addd1 extend its rsr its palin we add 1 cant go further we stop 
+
+
+and so on baakio k lie bhi 

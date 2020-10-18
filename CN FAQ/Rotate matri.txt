@@ -1,0 +1,24 @@
+hey in this u first need to take transpose of the matrix 
+
+
+and then reverse each column of the matrix 
+
+
+eg 
+
+
+a b c
+d e f
+g h i 
+
+transpose is 
+a d g
+b e h
+c f i
+
+
+revrse column is 
+
+c f i
+b e h
+a d g 

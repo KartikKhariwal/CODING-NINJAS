@@ -1,0 +1,33 @@
+hey its kind of difficult for me to explain its logic 
+
+
+So i am sending u psuedo code for the same 
+
+
+and try running it on few examples 
+
+
+and u will understand how it works 
+
+
+
+rightIdx = 0
+
+getDepth(str,a,Idx)
+    rightIdx++
+	if a is 'l' then return 0 
+	Ld = getDepth(str,str[Idx+1],Idx+1)
+	Rd = getDepth(str,str[rightIdx],rightIdx)
+	return 1+max(Ld,Rd)
+
+
+paste it on IDE for proper indentation 
+
+
+from depth we make initial call
+
+
+    		return getDepth(str,str[0],0)
+
+
+reopen if req :)

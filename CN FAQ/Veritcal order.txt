@@ -1,0 +1,11 @@
+make map of int,vector 
+
+Kartik Khariwal29/04/20 10:08
+
+now currently u are at vert ordere=0 so push root->data in map[0] vector 
+
+
+when u go left do order-1 and when right do order+1  and push node->data to map[order]
+
+
+this way after traversing whole tree run loop  from min order to max  order anf for each order print elemnt of vector 

@@ -1,0 +1,55 @@
+hey 
+
+
+so basically we have to find min no of platforms so that no train collide == max no of trains on station at any time 
+
+
+say we take a variable counter to keep track of trains on station 
+
+so initially no train at platform so counter =0;
+
+
+now we have arrival and departure time of trains 
+
+
+we will put them all in a vector where each entry in vector is pair st {Time, arrival or departure} 
+
+
+where pair first will give value of time and second will tell wheter its departure or arrival 
+
+
+sort these vector on the basis of time  and now traverse this vector 
+
+
+if train comes add 1  to counter and if train departs then deduct 1 from counter 
+
+
+so our ans will be max value of counter obtained during traversing of the vector
+
+
+see this for more clarification 
+
+
+arr[]  = {9:00,  9:40, 9:50,  11:00, 15:00, 18:00}
+    dep[]  = {9:10, 12:00, 11:20, 11:30, 19:00, 20:00}
+
+All events sorted by time.
+Total platforms at any time can be obtained by subtracting total 
+departures from total arrivals by that time.
+ Time     Event Type     Total Platforms Needed at this Time                               
+ 9:00       Arrival                  1
+ 9:10       Departure                0
+ 9:40       Arrival                  1
+ 9:50       Arrival                  2
+ 11:00      Arrival                  3 
+ 11:20      Departure                2
+ 11:30      Departure                1
+ 12:00      Departure                0
+ 15:00      Arrival                  1
+ 18:00      Arrival                  2 
+ 19:00      Departure                1
+ 20:00      Departure                0
+
+Minimum Platforms needed on railway station = Maximum platforms 
+                                              needed at any time 
+                                           = 3  

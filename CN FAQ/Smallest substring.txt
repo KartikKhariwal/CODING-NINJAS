@@ -1,0 +1,17 @@
+string 1 is small here and string 2 is large
+
+Store count of Characters of string 1 in map1
+make map2 and also initialize startindex=-1,lth=INT_MAX,ct=0,front=0;
+// ct is for checkin if we get all char of str1 or not
+// startindex and lth is our required string
+//front is used to omit redundant characters
+
+for (i=0 to str2.lth){
+    add  str2[i] to map2
+    if str2[i] in map1 and map2[str2[i]]<=map1[str2[i]] ct++;
+    if(ct==str1.lth){
+        Now remove redundant characters from starting by incrementing front 
+        now if new string dound length is greater than old string update result
+    }
+    
+}

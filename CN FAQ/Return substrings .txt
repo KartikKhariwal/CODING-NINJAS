@@ -1,0 +1,28 @@
+here is algo for the same 
+
+
+read comments carefully 
+
+
+getCodes(input,output[]) 
+    //base case:when input is empty i.e input[0]='\0'  then make output[0]="" and return 1
+    
+    //make 2 samlloutput array of strings  say op1 and op2
+    
+    //small calculation part
+    size1 = getCodes(input.substr(1), op1) 
+    //similarlly call for size2 using input.substr(2) and op2 if first 2 char>=10&&<=26
+    //say we get size2 from last comment 
+    
+    //building output array using op1 and op2
+    k = 0 
+    for i=0 to size1 
+        output[k] = input[0] + op[i]
+        k++; 
+    for i = 0 to size2 
+        output[k] = input.subst(0,2) + smallOutput2[i] 
+        k++ 
+    return size1+size2 
+
+
+paste on ide for proper indentation 

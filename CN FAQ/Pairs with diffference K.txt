@@ -1,0 +1,11 @@
+first take freq of all
+now 2 cases 
+    k=0
+       in this a=map[arr[i]]
+       print arr[i]  arr[i] for aC2 times
+       make map[arr[i]]=0
+    k!=0
+       in this a=map[arr[i]] c=map[arr[i]-c] b=map[arr[i]+c]
+       print arr[i] arr[i]+c for ac times
+       print arr[i]-c arr[i] for ab times
+       make map[arr[i]]=0
